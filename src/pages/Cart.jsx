@@ -1,6 +1,6 @@
 import React from "react";
 import EmptyCart from "../assets/empty_cart.svg";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 
 const Cart = ({ cart, changeQuantity, removeItem }) => {
   const total = () => {
@@ -45,8 +45,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                           </span>
                           <button
                             className="cart__book--remove"
-                            onClick={() => removeItem(book)}
-                          >
+                            onClick={() => removeItem(book)}>
                             Remove
                           </button>
                         </div>
@@ -99,8 +98,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                 </div>
                 <button
                   className="btn btn__checkout no-cursor"
-                  onClick={() => alert("Checkout not implemented yet!")}
-                >
+                  onClick={() => alert("Checkout not implemented yet!")}>
                   Proceed to Checkout
                 </button>
               </div>
