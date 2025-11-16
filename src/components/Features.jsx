@@ -2,6 +2,8 @@ import React from "react";
 import Book from "./ui/Book";
 
 const Features = ({ books }) => {
+  console.log("Features component - books received:", books);
+  console.log("Features component - books length:", books?.length);
   return (
     <section id="features">
       <div className="container">
