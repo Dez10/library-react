@@ -1,8 +1,7 @@
 import React from "react";
-import { books } from "../data";
 import Book from "./ui/Book";
 
-const Discounted = () => {
+const Discounted = ({ books }) => {
   return (
     <section id="recent">
       <div className="row">

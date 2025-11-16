@@ -1,8 +1,7 @@
 import React from "react";
 import Book from "./ui/Book";
-import { books } from "../data";
 
-const Features = () => {
+const Features = ({ books }) => {
   return (
     <section id="features">
       <div className="container">

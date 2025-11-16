@@ -5,16 +5,16 @@ import Features from "../components/Features";
 import Discounted from "../components/Discounted";
 import Explore from "../components/Explore";
 
-const Home = () => {
+const Home = ({ books }) => {
   return (
     <>
       <Landing />
       <Highlights />
-      <Features />
-      <Discounted />
+      <Features books={books} />
+      <Discounted books={books} />
       <Explore />
     </>
   );
-}
+};
 
 export default Home;
