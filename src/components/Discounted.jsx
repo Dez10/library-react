@@ -2,8 +2,6 @@ import React from "react";
 import Book from "./ui/Book";
 
 const Discounted = ({ books }) => {
-  console.log("Discounted component - books received:", books);
-  console.log("Discounted component - books length:", books?.length);
   return (
     <section id="recent">
       <div className="row">
